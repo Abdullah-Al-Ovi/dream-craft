@@ -26,10 +26,10 @@ const Banner = () => {
           <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="flex flex-col items-center justify-between xl:flex-row">
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                <h2 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                <h1 className="max-w-lg mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 Crafting Cherished Memories, <br className="hidden md:block " />
-               <h1 className="mt-2"> Where Dreams Meet Reality</h1>
-                </h2>
+               <p className="mt-2"> Where Dreams Meet Reality</p>
+                </h1>
                 <p className="max-w-xl mb-4 text-base text-gray-100 md:text-lg font-medium">
                 At DreamCraft Events, we bring your dreams to life. With meticulous attention to detail, we create unforgettable moments, from weddings to birthdays. Lets craft your special event together.
                 </p>

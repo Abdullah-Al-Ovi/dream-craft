@@ -1,7 +1,18 @@
-import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { authContex } from "../../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+    const navigate = useNavigate()
+    const {logOut,user}= useContext(authContex)
+    const handleSigbOut=()=>{
+        logOut()
+        .then(()=>{
+            navigate('/')
+        })
+    }
+
     return (
         <div className="navbar bg-base-100 w-[85%] mx-auto my-7">
   <div className="navbar-start">
@@ -15,7 +26,7 @@ const Navbar = () => {
         <li><NavLink to='/sign-up'>Sign up</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+    <p className=" text-sky-700 text-2xl font-bold shadow-2xl">Dream Craft</p>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -24,9 +35,21 @@ const Navbar = () => {
         <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
     </ul>
   </div>
-  <div className="navbar-end">
+  <div className="navbar-end ">
     
-    <Link to='/'><button className="btn bg-red-500 text-white font-semibold">Sign out</button></Link>
+   {
+    user &&  <div>
+       {
+        user.photoURL && <img className="w-[50px] inline-block" src={user.photoURL} />
+       }
+       <span className="mx-2">{user.displayName}</span>
+        <button onClick={handleSigbOut} className="btn bg-red-500 text-white font-semibold">Sign out</button> 
+        
+    </div>
+    
+
+   }
+
   </div>
 </div>
     );
