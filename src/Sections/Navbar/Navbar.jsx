@@ -27,7 +27,7 @@ const Navbar = () => {
         <li><NavLink to='/sign-up'>Sign up</NavLink></li>
       </ul>
     </div>
-    <p className=" text-sky-700 text-2xl font-bold shadow-2xl">Dream Craft</p>
+    <button className=" text-sky-700 text-2xl font-bold ">Dream Craft</button>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
