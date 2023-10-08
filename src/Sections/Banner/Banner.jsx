@@ -5,7 +5,8 @@ import logo3 from '../../assets/logo3.png'
 
 const Banner = () => {
     return (
-        <div className="relative">
+        <div className="relative" data-aos="fade-up"
+        data-aos-duration="1000">
         <div className='object-cover '>
         <img
           src={logo2}

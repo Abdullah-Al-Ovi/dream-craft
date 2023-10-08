@@ -14,7 +14,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-base-100 w-[85%] mx-auto my-7">
+        <div className="navbar bg-base-100 w-[85%] mx-auto my-7" data-aos="fade-up"
+        data-aos-duration="1000" >
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -11,7 +11,8 @@ const Reviews = () => {
    console.log(reviews.length);
     return (
         
-       <div>
+       <div data-aos="fade-up"
+       data-aos-duration="1000">
 
             
 
