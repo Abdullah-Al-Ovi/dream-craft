@@ -7,7 +7,9 @@ const AuthProvider = ({children}) => {
     const googlePro = new GoogleAuthProvider()
     const [user,setUser]= useState('')
     const [loading,setLoading]=useState(true)
-    console.log(user);
+    const [disName,setDisName]=useState('')
+    console.log(disName);
+  
     const createUser=(email,password)=>{
         setLoading(true)
         return createUserWithEmailAndPassword(auth,email,password)
@@ -40,9 +42,12 @@ const AuthProvider = ({children}) => {
         })
         return ()=> unSubs()
     },[])
+    const handleName=name=>{
+     return setDisName(name)
+    }
 
 
-    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading}
+    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading,setDisName,disName,handleName}
     return (
         <authContex.Provider value={authInfo}>
             {children}

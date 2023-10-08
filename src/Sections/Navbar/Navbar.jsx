@@ -5,7 +5,8 @@ import { authContex } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
     const navigate = useNavigate()
-    const {logOut,user}= useContext(authContex)
+    const {logOut,user,disName}= useContext(authContex)
+   
     const handleSigbOut=()=>{
         logOut()
         .then(()=>{
@@ -47,7 +48,7 @@ const Navbar = () => {
        {
         user.photoURL && <img className="w-[50px] inline-block" src={user.photoURL} />
        }
-       <span className="mx-2">{user.displayName}</span>
+       <span className="mx-2">{user.displayName ? user.displayName : disName}</span>
         <Link to='/'><button onClick={handleSigbOut} className="btn bg-red-500 text-white font-semibold">Sign out</button> </Link>
         
     </div>

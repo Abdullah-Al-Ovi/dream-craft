@@ -37,7 +37,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/career',
-                loader:()=>fetch('/career.json'),
+                loader:()=>fetch('/careers.json'),
                 element:<PrivateRoute><Career></Career></PrivateRoute>
             },
             {
