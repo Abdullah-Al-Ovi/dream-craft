@@ -6,36 +6,43 @@ export const authContex = createContext(null)
 const AuthProvider = ({children}) => {
     const googlePro = new GoogleAuthProvider()
     const [user,setUser]= useState('')
+    const [loading,setLoading]=useState(true)
     console.log(user);
     const createUser=(email,password)=>{
+        setLoading(true)
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const updateUser=(name,link)=>{
+        setLoading(true)
      
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: link
           })
       }
       const googleSignIn =()=>{
+        setLoading(true)
           return signInWithPopup(auth, googlePro)  
       }
       const signInUser=(email,password)=>{
+        setLoading(true)
         return signInWithEmailAndPassword(auth,email,password)
       }
 
       const logOut =()=>{
+        setLoading(true)
         return signOut(auth)
       }
     
     useEffect(()=>{
         const unSubs = onAuthStateChanged(auth,(currentUser)=>{
             setUser(currentUser)
+            setLoading(false)
         })
         return ()=> unSubs()
     },[])
 
 
-    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut}
+    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading}
     return (
         <authContex.Provider value={authInfo}>
             {children}

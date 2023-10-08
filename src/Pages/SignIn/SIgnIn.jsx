@@ -1,20 +1,24 @@
 
 import { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { authContex } from '../../AuthProvider/AuthProvider';
 import swal from 'sweetalert';
 const SIgnIn = () => {
     const {googleSignIn,signInUser} = useContext(authContex)
     const [err,setErr]=useState('')
+    const location =useLocation()
+    const navigate = useNavigate()
 
     const handleSignIn=e=>{
             e.preventDefault()
             const email = e.target.email.value
             const password = e.target.password.value
+            
             setErr('')
             signInUser(email,password)
             .then((res)=>{
                 e.target.reset()
+                navigate(location?.state ? location.state : '/' )
                 swal("Sign in Successful!", "Thanks for coming back!", "success");
 
             }
@@ -30,6 +34,7 @@ const SIgnIn = () => {
         setErr('')
         googleSignIn()
         .then(()=>{
+            navigate(location?.state && location.state )
             swal("Sign in with Google Successful!", "Thanks for coming back!", "success");
         })
         .catch(error=>{

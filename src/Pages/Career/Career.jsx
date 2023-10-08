@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { light } from "@mui/material/styles/createPalette";
+import { useLoaderData } from "react-router-dom";
 
 
-const Services = () => {
-    const [services,setServices]=useState([])
-    useEffect(()=>{
-            fetch('/eventdata.json')
-            .then(res=>res.json())
-            .then(data=>setServices(data))
-    },[])
+const Career = () => {
+    const careers = useLoaderData()
     return (
+      
         <div className="bg-gray-100" data-aos="fade-up"
         data-aos-duration="1000">
         <div className="w-[85%] mx-auto">
@@ -51,26 +47,28 @@ const Services = () => {
             </svg>
           </div>
           {/*  */}
-          <h2 className="text-4xl font-semibold text-center my-7">Our Services</h2>
+          <h2 className="text-4xl font-semibold text-center my-7">Build career with us</h2>
 
-        <div className="grid gap-3 gap-x-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-5 gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             {
-                services.map((service,idx)=>{
+                careers.map((career,idx)=>{
                     return <div key={idx} className="card bg-base-100 shadow-xl" data-aos="flip-left"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
-                    <figure><img className="h-36 w-[100%] object-cover" src={service.image} /></figure>
+                    
                     <div className="card-body">
-                      <h2 className="card-title text-red-900">{service.title}</h2>
-                      <p>
+                      <h2 className="card-title text-red-900">{career.designation}</h2>
+                      
+                      <p className="text-lg font-medium text-red-500">Salary:{career.salary}</p>
+                      <ol>
                         {
-                            service.description.slice(0,99)
+                            career.requirements.map((requ,index)=>{
+                               return <li key={index}><span><i className="fa-solid fa-arrow-right mr-1"></i></span><span>{requ}</span></li>
+                            })
                         }
-                        <span>...</span>
-                      </p>
-                      <p className="text-lg font-medium text-red-500">Price:${service.price}</p>
+                      </ol>
                       <div className="card-actions justify-end">
-                        <Link to={`/service/${service.id}`}><button className="p-1 bg-red-400 text-lg font-medium text-white rounded ">See Details</button></Link>
+                        <button className="p-1 bg-red-400 text-lg font-medium text-white rounded ">Apply</button>
                       </div>
                     </div>
                   </div>
@@ -81,7 +79,8 @@ const Services = () => {
         </div>
         </div>
       </div>
+
     );
 };
 
-export default Services;
+export default Career;

@@ -25,6 +25,8 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/sign-in'>Sign in</NavLink></li>
         <li><NavLink to='/sign-up'>Sign up</NavLink></li>
+        <li><NavLink to='/career'>Career</NavLink></li>
+        <li><NavLink to='/booking'>Booking</NavLink></li>
       </ul>
     </div>
     <button className=" text-sky-700 text-2xl font-bold ">Dream Craft</button>
@@ -33,7 +35,9 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/sign-in'>Sign in</NavLink></li>
-        <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
+    <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
+    <li><NavLink to='/career'>Career</NavLink></li>
+    <li><NavLink to='/booking'>Booking</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end ">
@@ -44,7 +48,7 @@ const Navbar = () => {
         user.photoURL && <img className="w-[50px] inline-block" src={user.photoURL} />
        }
        <span className="mx-2">{user.displayName}</span>
-        <button onClick={handleSigbOut} className="btn bg-red-500 text-white font-semibold">Sign out</button> 
+        <Link to='/'><button onClick={handleSigbOut} className="btn bg-red-500 text-white font-semibold">Sign out</button> </Link>
         
     </div>
     

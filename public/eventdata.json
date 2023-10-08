@@ -3,54 +3,43 @@
         "id": 1,
         "title": "Weddings",
         "description": "Celebrate your special day with an unforgettable wedding experience. Our team will take care of every detail, from venue selection to catering, to create a magical wedding ceremony and reception tailored to your dreams. We understand that your wedding is one of the most significant moments in your life, and we're here to ensure it's absolutely perfect. Our dedicated wedding planners will work closely with you to bring your vision to life, whether you dream of an elegant ballroom affair or a romantic beachfront wedding. We'll help you choose the ideal venue, create a customized menu that delights your guests, and design breathtaking decorations that reflect your style. From the first dance to the cutting of the cake, we'll orchestrate every moment with precision and care. Your wedding day should be stress-free and filled with joy, and our team will make sure of it. Let us handle the logistics so you can focus on savoring every moment with your loved ones. Trust us to make your wedding day a cherished memory that lasts a lifetime.",
-        "price": 5000
+        "price": 5000,
+        "image":"https://i.ibb.co/9nqNtTX/wedding-event-1.jpg"
     },
     {
         "id": 2,
         "title": "Birthday Parties",
         "description": "Make your birthday celebration one to remember. Our party planners will organize the perfect birthday bash, complete with themed decorations, delicious cakes, and entertainment for all ages. Birthdays are a time to celebrate life and create lasting memories with friends and family. Whether you're turning one or one hundred, our team is here to make your birthday dreams come true. From choosing a theme that reflects your interests to selecting the perfect venue, we've got it all covered. Imagine a whimsical children's party with colorful decorations and a fun-filled activity area or an elegant soirée with gourmet catering and live music. Whatever your vision, we'll bring it to life with creativity and attention to detail. Our experienced party planners will ensure that every element of your birthday celebration is flawless, leaving you free to enjoy the festivities. Let us help you blow out the candles and make a wish for a year filled with happiness and success.",
-        "price": 1000
+        "price": 1000,
+        "image":"https://i.ibb.co/5v4jkNs/birthday.jpg"
     },
     {
         "id": 3,
         "title": "Anniversaries",
         "description": "Commemorate your years together with a romantic anniversary celebration. We'll arrange an intimate gathering or a grand affair to mark this special milestone in your journey as a couple. Anniversaries are a time to reflect on the love and commitment you've shared throughout the years. Whether you're celebrating your first year together or a golden anniversary, our expert event planners will create an unforgettable experience. Picture a candlelit dinner under the stars, surrounded by the enchanting melodies of a string quartet, or a lively and vibrant party with your closest friends and family. We'll work closely with you to capture the essence of your relationship and design an anniversary celebration that speaks to your unique story. From choosing the perfect venue to curating a menu that tantalizes the taste buds, we'll handle every detail with care and precision. Let us help you express your love and gratitude to your partner in a way that will leave a lasting impression.",
-        "price": 1500
+        "price": 1500,
+        "image": "https://i.ibb.co/F471wqM/anniversary.jpg"
     },
     {
         "id": 4,
         "title": "Engagement Parties",
         "description": "Announce your engagement in style with a stunning engagement party. Our event planners will create an enchanting atmosphere, ensuring your engagement is celebrated with loved ones. Your engagement is a momentous occasion that deserves to be celebrated with all the pomp and splendor it deserves. Let us help you kick off your journey to marital bliss with an engagement party that dazzles. From elegant cocktail soirees to relaxed garden gatherings, our talented event planners will work closely with you to design an engagement party that reflects your personalities and love story. Imagine sipping champagne under a canopy of twinkling lights or sharing a heartfelt toast with family and friends as you embark on this exciting new chapter. We'll take care of every detail, from choosing the perfect venue to creating a menu that delights the senses. With our expertise, you can relax and enjoy the company of your loved ones as you announce your engagement in style.",
-        "price": 800
+        "price": 800,
+        "image":"https://i.ibb.co/4S15Fm8/engagement.jpg"
     },
     {
         "id": 5,
         "title": "Retirement Parties",
         "description": "Bid farewell to a long and successful career with a memorable retirement party. We'll arrange a heartfelt send-off, complete with speeches, decorations, and entertainment for your colleagues. Retirement is a significant milestone in life, marking the end of one chapter and the beginning of a new adventure. Celebrate your well-earned retirement with a memorable party that honors your accomplishments and sends you off in style. Our dedicated team of event planners will take care of every detail, ensuring your retirement party is a fitting tribute to your years of hard work. Whether you prefer an elegant evening affair or a casual gathering, we'll create an atmosphere that suits your taste and personality. Imagine heartfelt speeches from colleagues and friends, laughter, and reminiscing over shared memories, and a festive ambiance that makes you feel truly appreciated. Let us plan your retirement party so you can relax and bask in the recognition you deserve.",
-        "price": 1200
+        "price": 1200,
+        "image":"https://i.ibb.co/6yM8ByG/retirement.jpg"
     },
     {
         "id": 6,
         "title": "Baby Shower",
         "description": "Welcome your bundle of joy with a joyful baby shower. Our team will design a charming baby-themed event, including games, decorations, and treats for the parents-to-be. Welcoming a new baby into the world is a joyous occasion, and a baby shower is the perfect way to celebrate with loved ones. Our experienced event planners specialize in creating heartwarming and fun-filled baby showers that honor the parents-to-be and their upcoming arrival. Picture a whimsical baby-themed party with pastel decorations, adorable games, and a delectable spread of sweet treats. We'll work closely with you to design a baby shower that reflects your style and preferences, ensuring it's a day filled with laughter and cherished moments. From selecting the ideal venue to organizing baby-themed activities, we've got you covered. Let us take care of the details so you can focus on creating beautiful memories with family and friends as you prepare for the newest addition to your family.",
-        "price": 900
-    },
-    {
-        "id": 7,
-        "title": "Family Reunions",
-        "description": "Reconnect with loved ones and create lasting memories with a well-organized family reunion. Our planners will ensure a fun and enjoyable gathering for all generations. Family reunions are a time to rekindle bonds, share stories, and create cherished memories with relatives near and far. Whether you're planning a small family get-together or a large-scale reunion, our dedicated event planners are here to help you make it a memorable and stress-free experience. Imagine a picturesque picnic in the park with games and activities for the kids, or a grand banquet that brings generations together for an unforgettable evening. We'll assist you in selecting the perfect venue, curating a menu that satisfies all tastes, and organizing activities that cater to various age groups. Let us handle the logistics so you can focus on reconnecting with loved ones and making the most of this special time together.",
-        "price": 1800
-    },
-    {
-        "id": 8,
-        "title": "Graduation Parties",
-        "description": "Celebrate academic achievements with a graduation party to remember. Our planners will create a festive atmosphere with decorations, food, and entertainment for graduates and their families. Graduating is a significant accomplishment, and it deserves to be celebrated in style. Our event planners specialize in crafting memorable graduation parties that honor the hard work and dedication of graduates. Picture a lively gathering with friends and family, decorated in your school colors, complete with a buffet of delicious food and entertainment to keep everyone in high spirits. We'll work closely with you to ensure your graduation party reflects your personality and preferences. From selecting a suitable venue to organizing music and activities that capture the excitement of the day, we've got you covered. Let us help you create a graduation celebration that marks the beginning of an exciting new chapter in your life.",
-        "price": 700
-    },
-    {
-        "id": 9,
-        "title": "Holiday Parties",
-        "description": "Spread holiday cheer with a festive holiday party. We'll deck the halls, plan seasonal activities, and provide catering to make your holiday gathering joyful and stress-free. Holidays are a time for joy, togetherness, and celebration, and what better way to enjoy the festive season than with a well-organized holiday party? Our expert event planners specialize in creating holiday gatherings that capture the spirit of the season. Imagine a cozy and beautifully decorated space, where friends and family gather to celebrate, exchange gifts, and share in the joy of the holidays. We'll take care of everything, from decorating with twinkling lights and festive ornaments to planning seasonal activities that bring smiles to faces of all ages. And, of course, we'll provide a delectable catering menu that satisfies all your holiday cravings. Let us handle the details so you can relax and enjoy the magic of the holidays with your loved ones.",
-        "price": 1100
+        "price": 900,
+        "image":"https://i.ibb.co/vdTfJJN/baby.jpg"
     }
+    
 ]

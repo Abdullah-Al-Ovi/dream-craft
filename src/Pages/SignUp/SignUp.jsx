@@ -8,6 +8,7 @@ const SignUp = () => {
     const {createUser,updateUser} = useContext(authContex)
     const [err,setErr] = useState('')
 
+
     const handleSignUp= (e)=>{
         e.preventDefault()
         const email = e.target.email.value
@@ -32,6 +33,7 @@ const SignUp = () => {
             .catch(errr=>{
                 
             })
+            
             swal("Sign up Successfully!", "You are now a part of our family!", "success");
         })
         .catch(error=>{

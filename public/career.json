@@ -1,0 +1,80 @@
+[
+    {
+      "job_id": 1,
+      "designation": "Wedding Event Coordinator",
+      "salary": "$45,000 - $55,000 per year",
+      "requirements": [
+        "Bachelor's degree in Event Management or related field",
+        "Experience in planning and coordinating weddings",
+        "Excellent communication and interpersonal skills",
+        "Attention to detail and creativity"
+      ]
+    },
+    {
+      "job_id": 2,
+      "designation": "Birthday Party Planner",
+      "salary": "$40,000 - $50,000 per year",
+      "requirements": [
+        "High school diploma or equivalent",
+        "Experience in organizing birthday parties",
+        "Creative thinking and problem-solving abilities",
+        "Strong organizational and time management skills"
+      ]
+    },
+    {
+      "job_id": 3,
+      "designation": "Anniversary Celebration Specialist",
+      "salary": "$50,000 - $60,000 per year",
+      "requirements": [
+        "Bachelor's degree in Hospitality Management or related field",
+        "Proven experience in planning and executing anniversary events",
+        "Excellent client relationship management skills",
+        "Detail-oriented and ability to work under pressure"
+      ]
+    },
+    {
+      "job_id": 4,
+      "designation": "Engagement Party Coordinator",
+      "salary": "$42,000 - $52,000 per year",
+      "requirements": [
+        "Associate's degree in Event Planning or relevant field",
+        "Previous experience in organizing engagement parties",
+        "Strong multitasking and problem-solving skills",
+        "Exceptional communication and negotiation abilities"
+      ]
+    },
+    {
+      "job_id": 5,
+      "designation": "Retirement Party Planner",
+      "salary": "$38,000 - $48,000 per year",
+      "requirements": [
+        "High school diploma or equivalent",
+        "Experience in planning retirement events",
+        "Creativity and ability to customize events for retirees",
+        "Strong teamwork and collaboration skills"
+      ]
+    },
+    {
+      "job_id": 6,
+      "designation": "Baby Shower Event Coordinator",
+      "salary": "$40,000 - $50,000 per year",
+      "requirements": [
+        "Bachelor's degree in Event Management or a related field",
+        "Experience in organizing baby shower events",
+        "Excellent communication and interpersonal skills",
+        "Attention to detail and creativity"
+      ]
+    },
+    {
+      "job_id": 7,
+      "designation": "Graduation Party Planner",
+      "salary": "$42,000 - $52,000 per year",
+      "requirements": [
+        "Associate's degree in Event Planning or relevant field",
+        "Experience in planning graduation parties",
+        "Strong multitasking and problem-solving skills",
+        "Exceptional communication and negotiation abilities"
+      ]
+    }
+  ]
+  
