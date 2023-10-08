@@ -8,30 +8,31 @@ const AuthProvider = ({children}) => {
     const [user,setUser]= useState('')
     const [loading,setLoading]=useState(true)
     const [disName,setDisName]=useState('')
-    console.log(disName);
+    
+    
   
     const createUser=(email,password)=>{
-        setLoading(true)
+        
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const updateUser=(name,link)=>{
-        setLoading(true)
+      
      
         return updateProfile(auth.currentUser, {
             displayName: name, photoURL: link
           })
       }
       const googleSignIn =()=>{
-        setLoading(true)
+     
           return signInWithPopup(auth, googlePro)  
       }
       const signInUser=(email,password)=>{
-        setLoading(true)
+        
         return signInWithEmailAndPassword(auth,email,password)
       }
 
       const logOut =()=>{
-        setLoading(true)
+        
         return signOut(auth)
       }
     
@@ -42,12 +43,14 @@ const AuthProvider = ({children}) => {
         })
         return ()=> unSubs()
     },[])
-    const handleName=name=>{
-     return setDisName(name)
+
+    const handleName=(name)=>{
+      return setDisName(name)
     }
 
+    
 
-    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading,setDisName,disName,handleName}
+    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading,handleName,disName}
     return (
         <authContex.Provider value={authInfo}>
             {children}

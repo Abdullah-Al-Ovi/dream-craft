@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 const SignUp = () => {
     const {createUser,updateUser,handleName} = useContext(authContex)
     const [err,setErr] = useState('')
-    console.log(handleName);
+ 
 
 
     const handleSignUp= (e)=>{
@@ -23,16 +23,17 @@ const SignUp = () => {
             return
         }
 
-       
+        // handleName(name)
         createUser(email,password)
-        .then(res=>{
+        .then(()=>{
             e.target.reset()
             handleName(name)
+           
            updateUser(name,link)
-            .then(ress=>{
+            .then(()=>{
                 
             })
-            .catch(errr=>{
+            .catch(()=>{
                 
             })
             
