@@ -14,8 +14,8 @@ const SIgnIn = () => {
             setErr('')
             signInUser(email,password)
             .then((res)=>{
-                console.log(res.user);
-                swal("Sign in with Google Successful!", "Thanks for coming back!", "success");
+                e.target.reset()
+                swal("Sign in Successful!", "Thanks for coming back!", "success");
 
             }
             )

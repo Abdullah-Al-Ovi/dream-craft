@@ -8,24 +8,31 @@ const SignUp = () => {
     const {createUser,updateUser} = useContext(authContex)
     const [err,setErr] = useState('')
 
-    const handleSignUp=e=>{
+    const handleSignUp= (e)=>{
         e.preventDefault()
         const email = e.target.email.value
         const password = e.target.password.value
         const name= e.target.name.value
         const link= e.target.link.value
         setErr('')
-        console.log(email,password,name);
+
+        if(!/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)){
+            setErr('Password must be at least 6 characters,must contain at least one capital letter and one special character(@$!%*?&)')
+            return
+        }
+
+       
         createUser(email,password)
         .then(res=>{
-            updateUser(name,link)
+            e.target.reset()
+           updateUser(name,link)
             .then(ress=>{
                 
             })
             .catch(errr=>{
                 
             })
-            swal("Sign in Successfully!", "Thanks for coming back!", "success");
+            swal("Sign up Successfully!", "You are now a part of our family!", "success");
         })
         .catch(error=>{
             setErr(error.message)
