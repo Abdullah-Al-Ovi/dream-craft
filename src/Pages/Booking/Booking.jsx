@@ -9,33 +9,33 @@ const Booking = () => {
             <h1 className="text-3xl font-semibold text-center my-3">Book Your Event </h1>
             
            
-            <div className="w-[40%] mx-auto">
+            <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="username" className="block text-md text-gray-500 dark:text-gray-300">Username</label>
 
     <input type="text" readOnly  placeholder={user.displayName} className="block  mt-2 w-full placeholder-gray-800 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
     
             </div>
-            <div className="w-[40%] mx-auto">
+            <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="username" className="block text-md text-gray-500 dark:text-gray-300">Primary Email</label>
 
     <input type="text" readOnly  placeholder={user.email} className="block  mt-2 w-full placeholder-gray-800 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
     
             </div>
-            <div className="w-[40%] mx-auto">
+            <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="username" className="block text-md text-gray-500 dark:text-gray-300">Secondary Email</label>
 
     <input type="text"  placeholder='john@example.com'  className="block  mt-2 w-full placeholder-gray-400 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
     
             </div>
             
-            <div className="w-[40%] mx-auto">
+            <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="username" className="block text-md text-gray-500 dark:text-gray-300">Contact</label>
 
     <input type="text" required  placeholder='Phone no.' className="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
     
             </div>
 
-            <div className="w-[40%] mx-auto">
+            <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
                 <h3  className="block text-md text-gray-500 dark:text-gray-300">Select your event type</h3>
                  <div className="bg-[#FFF] p-3 rounded">
                    {/*  */}
@@ -85,28 +85,28 @@ const Booking = () => {
                  </div>
             </div>
 
-            <div  className="w-[40%] mx-auto">
+            <div  className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="Birthday" className="block text-md text-gray-500 dark:text-gray-300">Event date</label>
 
     <input type="date" required placeholder="John Doe" className="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
 
 </div>
 
-<div className="w-[40%] mx-auto">
+<div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="username" className="block text-md text-gray-500 dark:text-gray-300">Address</label>
 
     <input type="text" required  placeholder='Your complete address' className="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-5 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300" />
     
             </div>
 
-<div className="w-[40%] mx-auto">
+<div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
     <label htmlFor="Description" className="block text-sm text-gray-500 dark:text-gray-300">Description</label>
 
     <textarea placeholder="Tell us if you have any requirements..." className="block  mt-2 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-red-400 bg-white px-4 h-32 py-2.5 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 dark:border-red-400 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-red-300"></textarea>
     
     
 </div>
-        <div className="w-[40%] mx-auto">
+        <div className="w-[65%] md:w-[55%] lg:w-[40%] mx-auto">
         <button className="p-1 my-4 bg-red-400 rounded text-lg font-medium text-white w-[100%]">Proceed to checkout</button>
         </div>
             

@@ -17,7 +17,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navbar bg-base-100 w-[85%] mx-auto my-7" data-aos="fade-up"
+        <div className="navbar bg-base-100 w-[90%]  mx-auto my-7" data-aos="fade-up"
         data-aos-duration="1000" >
   <div className="navbar-start">
     <div className="dropdown">
@@ -46,7 +46,7 @@ const Navbar = () => {
   <div className="navbar-end ">
     
    {
-    user &&  <div>
+    user &&  <div className="flex md:inline-block flex-col gap-2 justify-center items-center">
        
          <img className="w-[50px]  rounded-full object-cover inline-block" src={user.photoURL ? user.photoURL : photoLink} /> 
 
