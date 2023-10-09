@@ -11,11 +11,11 @@ const ReviewSection = () => {
             <p className="inline-block px-3 py-px mb-4 text-2xl font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
               Reviews
             </p>
-            <p>
+            <h1>
             <p className="text-lg font-medium">Hear from Our Delighted Customers.</p>
 
             Discover what our satisfied clients have to say about their experiences with Dream Craft. These heartfelt reviews reflect our commitment to creating unforgettable events, making your special occasions truly exceptional. Your trust inspires us to continue exceeding expectations.
-            </p>
+            </h1>
           </div>
           
           

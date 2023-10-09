@@ -14,18 +14,18 @@ const ServiceDetails = () => {
     console.log(service,id);
 
     return (
-        <div className="w-[75%] mx-auto my-11 text-center shadow-2xl p-7">
+        <div className="w-[90%] md:w-[83%] lg:w-[75%] mx-auto my-11 text-center shadow-2xl p-7">
             <div>
-                <img className="h-[70vh] mx-auto w-[80%] object-cover" src={service.image} />
+                <img className="h-[40vh] md:h-[60vh] lg:h-[70vh] mx-auto w-[80%] object-cover" src={service.image} />
             </div>
             <div>
                 <h1 className="text-2xl font-semibold text-red-500 my-5">{service.title}</h1>
             </div>
             <div>
-                <p className="text-gray-500">{service.description}</p>
+                <p className="text-gray-500 text-start">{service.description}</p>
             </div>
             <div>
-                <button className="p-1 my-4 bg-red-400 rounded text-lg font-medium text-white w-[100%]">Make a plan</button>
+                <button className="p-1 my-5 bg-red-400 rounded text-lg font-medium text-white w-[100%]">Make a plan</button>
             </div>
         </div>
     );

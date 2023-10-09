@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { authContex } from "../../AuthProvider/AuthProvider";
 import swal from 'sweetalert';
 
 
 const SignUp = () => {
-    const {createUser,updateUser,handleName} = useContext(authContex)
+    const {createUser,updateUser,handleName,handleImage} = useContext(authContex)
     const [err,setErr] = useState('')
+    
  
 
 
@@ -16,6 +17,7 @@ const SignUp = () => {
         const password = e.target.password.value
         const name= e.target.name.value
         const link= e.target.link.value
+        console.log(link);
         setErr('')
 
         if(!/^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)){
@@ -28,6 +30,7 @@ const SignUp = () => {
         .then(()=>{
             e.target.reset()
             handleName(name)
+            handleImage(link)
            
            updateUser(name,link)
             .then(()=>{
@@ -38,6 +41,7 @@ const SignUp = () => {
             })
             
             swal("Sign up Successfully!", "You are now a part of our family!", "success");
+           
         })
         .catch(error=>{
             setErr(error.message)

@@ -8,7 +8,7 @@ const Reviews = () => {
     .then(res=>res.json())
     .then(data=>setReviews(data))
    },[])
-   console.log(reviews.length);
+ 
     return (
         
        <div data-aos="fade-up"

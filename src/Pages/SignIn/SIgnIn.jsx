@@ -16,7 +16,7 @@ const SIgnIn = () => {
             
             setErr('')
             signInUser(email,password)
-            .then((res)=>{
+            .then(()=>{
                 e.target.reset()
                 navigate(location?.state ? location.state : '/' )
                 swal("Sign in Successful!", "Thanks for coming back!", "success");

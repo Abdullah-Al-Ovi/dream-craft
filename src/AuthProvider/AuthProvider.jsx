@@ -8,6 +8,7 @@ const AuthProvider = ({children}) => {
     const [user,setUser]= useState('')
     const [loading,setLoading]=useState(true)
     const [disName,setDisName]=useState('')
+    const [photoLink,setPhotoLink] = useState('')
     
     
   
@@ -47,10 +48,13 @@ const AuthProvider = ({children}) => {
     const handleName=(name)=>{
       return setDisName(name)
     }
+    const handleImage =(link)=>{
+        return setPhotoLink(link)
+    }
 
     
 
-    const authInfo = {user,createUser,updateUser,googleSignIn,signInUser,logOut,loading,handleName,disName}
+    const authInfo = {user,handleImage,createUser,updateUser,googleSignIn,signInUser,logOut,loading,handleName,disName,photoLink}
     return (
         <authContex.Provider value={authInfo}>
             {children}
